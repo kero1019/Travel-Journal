@@ -1,0 +1,125 @@
+:root {
+  --backgroundColor: #FFFFFF;
+  --blackColor: #2B283A;
+  --RedColor:#F55A5A;
+  --grayColor:#918E9B;
+  --borderColor:#F5F5F5;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  margin:0px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Start  Media queries */
+/* very Small Screen */
+@media (max-width:767px){
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  .card .second--part{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Small Screen */
+@media (max-width: 992px) {
+  .card {
+    max-width: 600px;
+  }
+}
+
+/* Large Screen */
+@media (max-width: 1200px) {
+  .card{
+    max-width: 700px;
+  }
+}
+/* Very Large Screens */
+@media (min-width: 1200px){
+  .card {
+    max-width: 900px;
+  }
+}
+
+/* End Media queries */
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End of Global Rules */
+
+/* Start styling Navbar */
+.navbar{
+  background-color: var(--RedColor);
+  color:var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.navbar svg{
+  font-size: 30px;
+}
+/* End styling Navbar */
+/* Start styling Main section */
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align:justify;
+  margin-bottom: 20px;
+  border-bottom: solid 2px var(--borderColor);
+  padding-bottom: 40px;
+}
+.card img{
+  max-width: 155px;
+  max-height: 209px;
+  border-radius: 5px;
+  
+}
+.card .second--part{
+  margin-left: 30px;
+}
+.card .second--part .first-section{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card .second--part .first-section a{
+  color: var(--grayColor);
+  cursor: pointer;
+  font-size: 14px;;
+}
+.card .second--part .first-section .two--components{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card .second--part .first-section .two--components svg{
+  color: var(--RedColor);
+}
+.card .second--part .first-section .two--components p{
+  color: var(--blackColor);
+}
+.card h2{
+  margin: 0;
+  font-size: 30px;
+}
+.card .second--part .description{
+  color:var(--blackColor);
+}
+.card .second--part .second-section p{
+  font-weight: bold;
+  font-size: 15px;
+}
