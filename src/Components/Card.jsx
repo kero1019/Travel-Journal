@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope ,  faLocationDot } from '@fortawesome/free-solid-svg-icons'
 export default function Card(props){
     return(
         <div className="card">
@@ -7,7 +8,7 @@ export default function Card(props){
             <div className="second--part">
                 <div className="first-section">
                     <div className="two--components">
-                    <FontAwesomeIcon icon="fa-solid fa-location-dot" />
+                    <FontAwesomeIcon icon={faLocationDot} />
                     <p className="location">{props.location}</p>
                     </div>
                 <a href={props.googleMapsUrl}>View on Google Maps</a>
